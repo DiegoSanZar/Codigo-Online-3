@@ -59,7 +59,7 @@ function ProductoView() {
             </div>
           </div>
           <div className="container">
-        
+            <div className="row">
               <div className="col-12 col-md-6">
                 <img
                   src={producto.fotos[0]}
@@ -69,7 +69,7 @@ function ProductoView() {
               </div>
               <div className="col-12 col-md-6">
                 <h5 className="fw-bold">Colores:</h5>
-                <div className="d-flex">
+                <div className="d-flex mb-3">
                   {producto.colores.map((item, i) => (
                     <div
                       style={{
@@ -94,8 +94,9 @@ function ProductoView() {
                     Añadir a Carrito
                   </button>
                 </div>
-          
+                <hr />
               </div>
+            </div>
           </div>
         </div>
       )}
